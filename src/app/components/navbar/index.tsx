@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "../button";
 
 const Navbar = (): JSX.Element => {
     return (
@@ -9,8 +10,8 @@ const Navbar = (): JSX.Element => {
 
             <nav>
                 <ul className="list-none flex">
-                    <li className="p-4 bg-orange-500 border-2 border-black rounded-full">
-                        <Link href="/">Sign in</Link>
+                    <li className="">
+                        <Button><Link href="/">Sign in</Link></Button>
                     </li>
                     <li className="p-4">
                         <Link href="/about">Sign up</Link>
